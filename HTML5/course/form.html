@@ -30,6 +30,24 @@
                 <label for="">Email</label>
                 <input type="email" name="email" id="">
             </div>
+            <div class="form-group">
+                <label for="">Month</label>
+                <input type="month" name="month" id="">
+            </div>
+            <div class="form-group">
+                <label for="">Number</label>
+                <input type="number" name="number" id="" min="0" max="100" step="2">
+            </div>
+            <div class="form-group">
+                <label for="">Range</label>
+                <input type="text" name="" id="textinput">
+                <input type="range" name="range" id="" min="0" max="100" onchange="updateTextInput(this.value)">
+                <script>
+                    function updateTextInput(num) {
+                        document.getElementById("textinput").value = num;
+                    }
+                </script>
+            </div>
             <button>Submit</button>
         </form>
     </section>
