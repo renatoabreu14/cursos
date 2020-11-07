@@ -7,3 +7,6 @@ myTag{
     padding: 50px;
     font-size: 30px;
 }
+main section, main aside{
+    display: inline-block;
+}
