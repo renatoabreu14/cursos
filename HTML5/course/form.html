@@ -77,6 +77,19 @@
             </div>
             <button>Submit</button>
         </form>
+        <section>
+            <h1>Output</h1>
+            <form action="" oninput="x.value = parseInt(a.value) + parseInt(b.value), y.value = parseInt(a.value)">
+                0
+                <input type="range" id="a" name="a" value="50" min="0" max="100">
+                100
+                +
+                <input type="text" name="b" id="" value="0">
+                =
+                <output name="x"></output>
+                <output name="y"></output>
+            </form>
+        </section>
     </section>
 </body>
 </html>
