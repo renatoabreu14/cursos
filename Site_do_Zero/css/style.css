@@ -6,6 +6,27 @@ body{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+#header .btn{
+    background-color: rgb(84, 209, 84);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+#header .btn:hover{
+    background-color: rgb(84, 180, 84);
+}
+#header nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+#header nav a:hover, #header nav a.active{
+    background-color: rgba(84, 209, 84, 0.3);
+}
 #header{
     background: url(../images/background-header.jpg) no-repeat;
     background-size: cover;
@@ -15,12 +36,7 @@ body{
     position: relative;
     padding-top: 30px;
 }
-a{
-    text-decoration: none;
-}
-#header a{
-    color: #fff;
-}
+
 #header nav{
     text-align: right;
 }
@@ -35,4 +51,10 @@ a{
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+}
+#header h1{
+    font-size: 54px;
+}
+#header a{
+    color: #fff;
 }
