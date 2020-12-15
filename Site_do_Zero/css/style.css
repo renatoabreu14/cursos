@@ -1,12 +1,15 @@
 @import url("reset.css");
 @import url("grid.css");
 @import url("buttons.css");
+@import url("tipography.css");
+@import url("icons.css");
 
 *{
     box-sizing: border-box;
 }
 body{
     font-family: 'Open sans', sans-serif;
+    color: rgb(130, 130, 130);
 }
 a{
     text-decoration: none;
@@ -54,4 +57,6 @@ a{
 }
 #how-it-work{
     text-align: center;
+    padding: 30px 0 30px 0;
 }
+
