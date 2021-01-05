@@ -11,6 +11,7 @@
 body{
     font-family: 'Open sans', sans-serif;
     color: rgb(130, 130, 130);
+    line-height: 25px;
 }
 a{
     text-decoration: none;
@@ -26,7 +27,7 @@ a{
     background-color: rgba(84, 209, 84, 0.3);
 }
 #header{
-    background:#000 no-repeat;
+    background:#000 no-repeat fixed;
     background-size: cover;
     color: #fff;
     width: 100%;
