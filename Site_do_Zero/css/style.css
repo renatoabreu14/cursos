@@ -3,6 +3,7 @@
 @import url("buttons.css");
 @import url("tipography.css");
 @import url("icons.css");
+@import url("menu.css");
 
 *{
     box-sizing: border-box;
@@ -25,7 +26,7 @@ a{
     background-color: rgba(84, 209, 84, 0.3);
 }
 #header{
-    background: url(../images/background-header.jpg) no-repeat;
+    background:#000 no-repeat;
     background-size: cover;
     color: #fff;
     width: 100%;
@@ -39,9 +40,8 @@ a{
 }
 #header nav ul, #header nav ul li{
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
+
 #header .title{
     position: absolute;
     left: 0;
@@ -55,45 +55,70 @@ a{
 #header a{
     color: #fff;
 }
-#team, #customers, #how-it-work{
+
+/*#footer, #team, #customers, #how-it-work{
     text-align: center;
+    padding: 30px 0 30px 0;
+}*/
+.section{
     padding: 30px 0 30px 0;
 }
 
-#customers{
-    background-color: rgb(242, 242, 242);
+.section-center{
+    text-align: center;
 }
 
-#customers .btn{
-    margin-top: 80px;
-    background-color: rgb(220, 220, 220);
-    color: rgb(130, 130, 130);
+#footer{
+    background-color: rgb(51, 51, 51);
+    text-align: left;
 }
 
-#customers .btn:hover {
-    background-color: rgb(130, 130, 130);
-    color: rgb(220, 220, 220);
+#footer, #footer a{
+    color: rgb(204, 204, 204);
 }
 
-#customers .btn .material-icons{
+#footer h3, #footer nav li{
+    text-transform: uppercase;
+}
+
+#footer h3:after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    width: 30px;
+}
+
+#footer nav li{
+    padding: 3px 0;
+}
+
+#footer nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#footer .social{
+    height: 200px;
+    line-height: 200px;
+    text-align: right;
+}
+
+#footer .social a{
+    display: inline-block;
+    padding: 0 0 0 10px;
+    opacity: 1;
+}
+
+#footer .social a:hover{
+    opacity: .5;
+    transition: ease .3s all;
+}
+
+#footer .social img{
     vertical-align: middle;
-    font-size: 16px;
 }
 
-#customers .container{
-    max-width: 1000px;
-}
-
-#team{
-    background-color: rgb(84, 209, 84);
-    color: white;
-}
-
-#team .img-box-round{
-    width: 120px;
-    height: 120px;
-}
-
-#team h2:after{
-    background-color: rgb(255, 255, 255);
+#copyright{
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
 }
