@@ -2,9 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contato - Chatschool</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages/contato.css">
 </head>
 <body>
+<header id="header" class="page-contato">
+    <div class="container">
+        <div class="row">
+            <div class="col col-desktop-3"><a href="index.html"><img src="images/logo.png" alt="Logo da Chatschool"></a></div>
+            <div class="col col-desktop-9">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quem-somos.html">Quem somos</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-desktop-12 title">
+                <h1>Alta produtividade em tempo real</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section section-center">
+        <h2>Contato</h2>
+        <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Sed consectetur pulvinar sem at gravida.
+        </p>
+        <div class="container">
+            <form class="row">
+                <div class="col col-desktop-6">
+                    <div class="input-control">
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="nome">Nome*</label>
+                    </div>
+                    <div class="input-control">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">Email*</label>
+                    </div>
+                    <div class="input-control">
+                        <input type="number" name="telefone" id="telefone">
+                        <label for="telefone">Telefone</label>
+                    </div>
+                </div>
+                <div class="col col-desktop-6">
+                    <div class="input-control">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                        <label for="mensagem">Mensagem</label>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" class="btn orange">
+            </form>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col col-offset-desktop-1 col-desktop-3">
+                <p><a href="index.html"><img src="images/logo.png" alt=""></a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisl ac turpis rhoncus rhoncus. Pellentesque varius urna ipsum. Ut.</p>
+            </div>
+            <div class="col col-offset-desktop-1 col-desktop-2">
+                <h3>Menu</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="quem-somos.html">Quem somos</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col col-desktop-3 social">
+                <a href=""><img src="images/social-facebook.png" alt=""></a>
+                <a href=""><img src="images/social-twitter.png" alt=""></a>
+                <a href=""><img src="images/social-youtube.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="copyright">
+    &copy; Chatschool - 2020 - Todos os direitos reservados
+</div>
 
 </body>
 </html>
