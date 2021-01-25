@@ -11,4 +11,40 @@ function getTotal(list) {
     }
     return total;
 }
- console.log(getTotal(list));
+
+function setList(list){
+    var table = '<thead>\n' +
+        '                    <tr>\n' +
+        '                        <td>Description</td>\n' +
+        '                        <td>Amount</td>\n' +
+        '                        <td>Value</td>\n' +
+        '                        <td>Action</td>\n' +
+        '                    </tr>\n' +
+        '                </thead>\n' +
+        '                <tbody>';
+    for(var key in list){
+        table += '<tr>';
+        table += '<td>'+formatDescription(list[key].description)+'</td>';
+        table += '<td>'+list[key].amount+'</td>';
+        table += '<td>'+formatValue(list[key].value)+'</td>';
+        table += '<td>Edit | Delete</td>';
+        table += '</tr>';
+    }
+    table += '</tbody>';
+    document.getElementById('listTable').innerHTML = table;
+}
+
+function formatDescription(description) {
+    var str = description.toLowerCase();
+    str = str.charAt(0).toUpperCase() + str.slice(1);
+    return str;
+}
+
+function formatValue(value) {
+    var str = parseFloat(value).toFixed(2) + '';
+    str = str.replace('.', ',');
+    str = 'R$ ' + str;
+    return str;
+}
+
+setList(list);
