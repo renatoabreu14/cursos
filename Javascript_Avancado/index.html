@@ -28,8 +28,13 @@
                         <input type="text" id="value" class="form-control" placeholder="Value">
                     </div>
                 </div>
-                <div class="col-12">
-                    <button onclick="addData()" class="btn btn-default">Add</button>
+                <div class="col-12" id="btnAdd" >
+                    <button onclick="addData()" class="btn btn-success">Add</button>
+                </div>
+                <div class="col-12" id="btnUpdate" style="display: none;">
+                    <input type="hidden" id="inputIdUpdate">
+                    <button onclick="updateData()" class="btn btn-success">Save</button>
+                    <button onclick="resetForm()" class="btn btn-danger">Cancel</button>
                 </div>
             </div>
             <table id="listTable" class="table table-hover">
