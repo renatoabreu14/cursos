@@ -47,4 +47,17 @@ function formatValue(value) {
     return str;
 }
 
+function addData() {
+    var description = document.getElementById('description').value;
+    var amount = document.getElementById('amount').value;
+    var value = document.getElementById('value').value;
+
+
+    list.unshift({"description":description, "amount":amount, "value":value});
+    //console.log(list);
+    setList(list);
+}
+
 setList(list);
+
+//console.log(list);

@@ -15,6 +15,23 @@
     </header>
     <main>
         <div class="container-fluid">
+            <div class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="col-12">
+                    <input type="text" id="description" class="form-control" placeholder="Description">
+                </div>
+                <div class="col-12">
+                    <input type="text" id="amount" class="form-control" placeholder="Amount">
+                </div>
+                <div class="col-12">
+                    <div class="input-group">
+                        <div class="input-group-text">R$</div>
+                        <input type="text" id="value" class="form-control" placeholder="Value">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button onclick="addData()" class="btn btn-default">Add</button>
+                </div>
+            </div>
             <table id="listTable" class="table table-hover">
 
             </table>
